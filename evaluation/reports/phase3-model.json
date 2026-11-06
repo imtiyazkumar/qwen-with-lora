@@ -1,0 +1,189 @@
+{
+  "checked_at_utc": "2026-11-03T14:37:47.589546+00:00",
+  "repo_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "runtime": "transformers-with-unsloth-kernels",
+  "tests": [
+    {
+      "answer": "Paris",
+      "prompt_tokens": 26,
+      "generated_tokens": 4,
+      "elapsed_seconds": 0.284,
+      "tokens_per_second_including_prefill": 14.08,
+      "decode_tokens_per_second": 15.19,
+      "time_to_first_token_seconds": 0.086,
+      "output_truncated": false,
+      "memory": {
+        "torch_allocated_mib": 3603.4,
+        "torch_reserved_mib": 3632.0,
+        "peak_torch_allocated_mib": 3625.0,
+        "peak_torch_reserved_mib": 3632.0,
+        "gpu_free_mib": 1487.0,
+        "gpu_used_mib": 4656.5,
+        "gpu_total_mib": 6143.5
+      },
+      "knowledge_mode": "general_model_or_explicit_prompt_context",
+      "id": "basic_fact",
+      "expected_pattern": "(?i)\\bParis\\b",
+      "passed": true
+    },
+    {
+      "answer": "12",
+      "prompt_tokens": 26,
+      "generated_tokens": 5,
+      "elapsed_seconds": 0.299,
+      "tokens_per_second_including_prefill": 16.75,
+      "decode_tokens_per_second": 17.47,
+      "time_to_first_token_seconds": 0.069,
+      "output_truncated": false,
+      "memory": {
+        "torch_allocated_mib": 3603.4,
+        "torch_reserved_mib": 3632.0,
+        "peak_torch_allocated_mib": 3625.0,
+        "peak_torch_reserved_mib": 3632.0,
+        "gpu_free_mib": 1487.0,
+        "gpu_used_mib": 4656.5,
+        "gpu_total_mib": 6143.5
+      },
+      "knowledge_mode": "general_model_or_explicit_prompt_context",
+      "id": "arithmetic",
+      "expected_pattern": "\\b12\\b",
+      "passed": true
+    },
+    {
+      "answer": "09:30",
+      "prompt_tokens": 48,
+      "generated_tokens": 8,
+      "elapsed_seconds": 0.497,
+      "tokens_per_second_including_prefill": 16.09,
+      "decode_tokens_per_second": 16.98,
+      "time_to_first_token_seconds": 0.084,
+      "output_truncated": false,
+      "memory": {
+        "torch_allocated_mib": 3603.4,
+        "torch_reserved_mib": 3634.0,
+        "peak_torch_allocated_mib": 3626.4,
+        "peak_torch_reserved_mib": 3634.0,
+        "gpu_free_mib": 1485.0,
+        "gpu_used_mib": 4658.5,
+        "gpu_total_mib": 6143.5
+      },
+      "knowledge_mode": "general_model_or_explicit_prompt_context",
+      "id": "provided_context",
+      "expected_pattern": "09:30",
+      "passed": true
+    },
+    {
+      "answer": "NOT PROVIDED",
+      "prompt_tokens": 50,
+      "generated_tokens": 5,
+      "elapsed_seconds": 0.287,
+      "tokens_per_second_including_prefill": 17.41,
+      "decode_tokens_per_second": 20.96,
+      "time_to_first_token_seconds": 0.096,
+      "output_truncated": false,
+      "memory": {
+        "torch_allocated_mib": 3603.4,
+        "torch_reserved_mib": 3634.0,
+        "peak_torch_allocated_mib": 3626.5,
+        "peak_torch_reserved_mib": 3634.0,
+        "gpu_free_mib": 1485.0,
+        "gpu_used_mib": 4658.5,
+        "gpu_total_mib": 6143.5
+      },
+      "knowledge_mode": "general_model_or_explicit_prompt_context",
+      "id": "missing_information",
+      "expected_pattern": "(?i)NOT PROVIDED",
+      "passed": true
+    },
+    {
+      "answer": "River",
+      "prompt_tokens": 44,
+      "generated_tokens": 4,
+      "elapsed_seconds": 0.235,
+      "tokens_per_second_including_prefill": 17.01,
+      "decode_tokens_per_second": 17.08,
+      "time_to_first_token_seconds": 0.059,
+      "output_truncated": false,
+      "memory": {
+        "torch_allocated_mib": 3603.4,
+        "torch_reserved_mib": 3634.0,
+        "peak_torch_allocated_mib": 3626.1,
+        "peak_torch_reserved_mib": 3634.0,
+        "gpu_free_mib": 1485.0,
+        "gpu_used_mib": 4658.5,
+        "gpu_total_mib": 6143.5
+      },
+      "knowledge_mode": "general_model_or_explicit_prompt_context",
+      "id": "multi_turn",
+      "expected_pattern": "(?i)\\bRiver\\b",
+      "passed": true
+    }
+  ],
+  "checkpoint_integrity": "passed",
+  "model_class": "Qwen3_5ForCausalLM",
+  "model_type": "qwen3_5_text",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "tokenizer_vocab_size": 248077,
+  "parameters": 1881825088,
+  "load_seconds": 1.703,
+  "after_load_memory": {
+    "torch_allocated_mib": 3603.4,
+    "torch_reserved_mib": 3608.0,
+    "peak_torch_allocated_mib": 3603.4,
+    "peak_torch_reserved_mib": 3608.0,
+    "gpu_free_mib": 1517.0,
+    "gpu_used_mib": 4626.5,
+    "gpu_total_mib": 6143.5
+  },
+  "dtype": "torch.bfloat16",
+  "devices": [
+    "cuda:0"
+  ],
+  "missing_keys": [],
+  "warmup_seconds": 4.848,
+  "benchmark": {
+    "answer": "Here are five short, practical tips for organizing your personal document collection:\n\n1.  **Categorize by Function, Not Just Date**\n    Instead of sorting strictly by year, group documents by their purpose (e.g., \"Legal,\" \"Medical,\" \"Financial,\" \"Personal\"). This makes it easier to find specific types of records quickly, even if they are scattered across different years.\n\n2.  **Use Color-Coded Index Cards or Folders**\n    Assign a specific color to each category (e.g., blue for legal, red for medical). This creates a visual \"at-a-glance\" system that",
+    "prompt_tokens": 25,
+    "generated_tokens": 128,
+    "elapsed_seconds": 6.921,
+    "tokens_per_second_including_prefill": 18.5,
+    "decode_tokens_per_second": 18.61,
+    "time_to_first_token_seconds": 0.094,
+    "output_truncated": true,
+    "memory": {
+      "torch_allocated_mib": 3603.4,
+      "torch_reserved_mib": 3634.0,
+      "peak_torch_allocated_mib": 3626.4,
+      "peak_torch_reserved_mib": 3634.0,
+      "gpu_free_mib": 1485.0,
+      "gpu_used_mib": 4658.5,
+      "gpu_total_mib": 6143.5
+    },
+    "knowledge_mode": "general_model_or_explicit_prompt_context"
+  },
+  "context_probe": {
+    "answer": "09:30",
+    "prompt_tokens": 567,
+    "generated_tokens": 8,
+    "elapsed_seconds": 0.571,
+    "tokens_per_second_including_prefill": 14.01,
+    "decode_tokens_per_second": 20.95,
+    "time_to_first_token_seconds": 0.236,
+    "output_truncated": false,
+    "memory": {
+      "torch_allocated_mib": 3603.5,
+      "torch_reserved_mib": 3704.0,
+      "peak_torch_allocated_mib": 3670.4,
+      "peak_torch_reserved_mib": 3704.0,
+      "gpu_free_mib": 1415.0,
+      "gpu_used_mib": 4728.5,
+      "gpu_total_mib": 6143.5
+    },
+    "knowledge_mode": "general_model_or_explicit_prompt_context"
+  },
+  "input_budget_guard": "passed",
+  "python_network_attempts": [],
+  "status": "passed",
+  "offline_scope": "local-only assets and HF offline flags; Python socket/DNS calls blocked"
+}

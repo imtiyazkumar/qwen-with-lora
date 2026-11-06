@@ -1,0 +1,18 @@
+# Keep the GPU baseline; use --torch-backend cu128 when installing.
+-r requirements-gpu.txt
+unsloth==2026.10.11
+unsloth-zoo==2026.10.11
+xformers==0.0.34
+# TorchAO 0.16 native extensions match PyTorch 2.10.
+torchao==0.16.0
+transformers==5.17.0
+peft==0.21.2
+trl==1.15.0
+bitsandbytes==0.50.2
+accelerate==1.15.0
+datasets==4.8.5
+notebook==7.6.4
+ipykernel==7.4.0
+pip==26.3
+# Optional convolution acceleration installed for the local Qwen runtime.
+-r requirements-causal-conv.txt

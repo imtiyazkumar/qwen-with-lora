@@ -1,0 +1,10 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+models/base/
+models/adapters/
+data/documents/
+data/processed/
+knowledge/chroma/
+training/checkpoints/

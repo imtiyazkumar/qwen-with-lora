@@ -1,0 +1,1 @@
+"""Local knowledge assistant backend."""

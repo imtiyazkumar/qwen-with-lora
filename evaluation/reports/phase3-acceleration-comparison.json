@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-11-03T15:16:22.086499+00:00",
+  "baseline_report": "phase3-model.json",
+  "accelerated_report": "phase3-model-accelerated.json",
+  "causal_conv1d_version": "1.7.0",
+  "ninja_version": "1.13.2",
+  "repo_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "decode_tokens_per_second": {
+    "before": 18.61,
+    "after": 19.64
+  },
+  "observed_decode_rate_change_percent": 5.53,
+  "benchmark_generated_tokens": 128,
+  "generation_seconds": {
+    "before": 6.921,
+    "after": 6.532
+  },
+  "benchmark_time_to_first_token_seconds": {
+    "before": 0.094,
+    "after": 0.064
+  },
+  "benchmark_text_identical": true,
+  "smoke_answers_identical": true,
+  "smoke_checks_passed": 5,
+  "context_prompt_tokens": 567,
+  "context_gpu_used_mib": {
+    "before": 4728.5,
+    "after": 4728.5
+  },
+  "context_peak_torch_allocated_mib": 3670.4,
+  "python_network_attempts": [],
+  "convolution_fallback_warnings_observed_in_run_output": false,
+  "interpretation": "One warm benchmark per environment. The longer response was faster in this run; short-response/context timing varied. This is not a controlled multi-run speedup estimate.",
+  "status": "passed"
+}

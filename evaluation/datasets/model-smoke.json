@@ -1,0 +1,31 @@
+[
+  {
+    "id": "basic_fact",
+    "messages": [{"role": "user", "content": "What is the capital of France? Reply with the city name only."}],
+    "expected_pattern": "(?i)\\bParis\\b"
+  },
+  {
+    "id": "arithmetic",
+    "messages": [{"role": "user", "content": "What is 7 plus 5? Reply with the number only."}],
+    "expected_pattern": "\\b12\\b"
+  },
+  {
+    "id": "provided_context",
+    "messages": [{"role": "user", "content": "Use only this supplied context: The Cedar workshop begins at 09:30 on Thursday. Question: At what time does the workshop begin? Reply with the time only."}],
+    "expected_pattern": "09:30"
+  },
+  {
+    "id": "missing_information",
+    "messages": [{"role": "user", "content": "Use only this supplied context: The Cedar workshop begins at 09:30 on Thursday. Question: What is the organizer's email address? If absent, reply exactly NOT PROVIDED."}],
+    "expected_pattern": "(?i)NOT PROVIDED"
+  },
+  {
+    "id": "multi_turn",
+    "messages": [
+      {"role": "user", "content": "My nickname is River."},
+      {"role": "assistant", "content": "Hello, River."},
+      {"role": "user", "content": "What nickname did I give you? Reply with the nickname only."}
+    ],
+    "expected_pattern": "(?i)\\bRiver\\b"
+  }
+]

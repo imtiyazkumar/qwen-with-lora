@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-11-03T14:05:35.525377+00:00",
+  "python": "3.12.16",
+  "interpreter": "/home/imtiyaz/workspace/ai/quen-lora/.venv/bin/python",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "torch": "2.10.0+cu128",
+  "torch_cuda_runtime": "12.8",
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "compute_capability": "8.6",
+  "vram_total_mib": 6143.5,
+  "forward_pass": "passed",
+  "backward_pass": "passed",
+  "peak_torch_allocated_mib": 16.38,
+  "vram_free_mib": 5101.0,
+  "status": "passed"
+}

@@ -1,0 +1,14 @@
+{
+  "repo_id": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "license": "apache-2.0",
+  "local_path": "models/base/Qwen3.5-2B",
+  "runtime": "transformers-with-unsloth-kernels",
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "attention_implementation": "sdpa",
+  "max_context_tokens": 1024,
+  "max_input_tokens": 768,
+  "max_new_tokens": 128,
+  "enable_thinking": false
+}

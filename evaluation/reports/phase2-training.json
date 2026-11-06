@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-11-03T14:19:21.913255+00:00",
+  "checks": {
+    "imports": {
+      "unsloth": "2026.10.11",
+      "unsloth_zoo": "2026.10.11",
+      "torch": "2.10.0+cu128",
+      "transformers": "5.17.0",
+      "peft": "0.21.2",
+      "trl": "1.15.0",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.15.0",
+      "datasets": "4.8.5",
+      "xformers": "0.0.34",
+      "torchao": "0.16.0+cu128",
+      "triton": "3.6.0",
+      "torchvision": "0.25.0+cu128",
+      "notebook": "7.6.4",
+      "ipykernel": "7.4.0",
+      "pip": "26.3"
+    },
+    "nf4": {
+      "status": "passed",
+      "format": "nf4",
+      "packed_dtype": "torch.uint8"
+    },
+    "attention": {
+      "status": "passed",
+      "reference": "PyTorch SDPA"
+    },
+    "unsloth_kernel": {
+      "status": "passed",
+      "kernel": "Triton RMSNorm forward/backward"
+    },
+    "lora": {
+      "status": "passed",
+      "fixture": "tiny randomly initialized Llama; no pretrained assets",
+      "training_steps": 1,
+      "training_loss": 4.1983771324157715,
+      "mixed_precision": "torch.bfloat16",
+      "trainable_parameters": 1024,
+      "base_weights_unchanged": true,
+      "adapter_save_reload_disable_unload": "passed"
+    },
+    "jupyter": {
+      "status": "passed",
+      "kernel": "local-ai",
+      "python": "/home/imtiyaz/workspace/ai/quen-lora/.venv/bin/python",
+      "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+    }
+  },
+  "scope": "synthetic environment tests; no production model or dataset",
+  "peak_torch_allocated_mib": 16.51,
+  "python_network_attempts": [],
+  "status": "passed",
+  "elapsed_seconds": 20.82
+}
